@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="hw1.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <title>LA Intro</title>
+</head>
+
+
+<body style="font-family: Comfortaa; background-color:#262626;">
+
+    <!-- Section 1: Top Menu -->
+    <div class="top_menu">
+        <ul class="menu_bar">
+            <li id="menu_home">
+                <a href="home.html">Home</a>
+            </li>
+            <li id="menu_home">
+                <a href=" notFound.html ">Explore</a>
+            </li>
+            <li id="menu_home">
+                <a href="notFound.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header_bg">
+        <img src="rodeo-drive_ched.jpg"></img>
+        <div class="header_text">LA - The City of Angels</div>
+    </div>
+
+    <!-- Section 2-->
+    <div id="section2_container">
+
+    </div>
+
+    <!-- Section 3-->
+    <div id="section3_container">
+
+    </div>
+
+    <!-- Section 4-->
+    <div id="section4_container_outter">
+
+    </div>
+
+    <!-- Last Section: Footer -->
+    <footer>
+        <div id="section5_container">
+            <ul id="section5_box">
+                <li>
+                    <p><br><br></p>
+                    <p style="line-height: 1.5;">Tip the world over on its side and everything loose will land in Los Angeles</p>
+                    <p style="font-weight: 600;"><br>-Frank Lloyd Wright</p>
+                </li>
+                <li>
+                    <p style="font-size: 22px; font-weight: 600;">Designed By</p>
+                    <p style="font-weight: 585;"><br>Jim Poon<br><br></p>
+                    <a href="mailto:jimpoon@usc.edu">jimpoon@usc.edu<br><br></a>
+                    <a href="tel:1-114-514-0000">(+1) 114 514 0000</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+    <script>
+        fetch('https://jim48949.github.io/a819sd81gw826/data.json')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                console.log("Printing data: ", data.section3);
+                appendData_s2(data.section2);
+                appendData_s3(data.section3);
+                appendData_s4(data.section4);
+            })
+            .catch(function(err) {
+                console.log('error: ' + err);
+
+            });
+
+        function appendData_s2(data) {
+            var s2Container = document.getElementById("section2_container");
+            for (var i = 0; i < data.length; i++) {
+                var s2_box = "<div id='section2_box'>" +
+                    "<img src='" + data[i].image + "'></img>" +
+                    "<div id='section2_title'>" + data[i].heading + "</div>" +
+                    "<div id='section2_text'>" + data[i].text + "</div>" +
+                    "</div>";
+                s2Container.innerHTML += s2_box;
+            }
+        }
+
+        function appendData_s3(data) {
+            var s3Container = document.getElementById("section3_container");
+            var s3_box = "<div id='section3_box'>" + "<div id='section3_text'>";
+            for (i in data.text) {
+                s3_box += data.text[i] + "<br>" + "<br>";
+            }
+            s3_box += "</div>" + "</div>";
+            s3Container.innerHTML += s3_box;
+            var s3Img = "<div id='section3_box'>" + "<img src='lasky.png' align='right'></img>" + "</div>";
+            s3Container.innerHTML += s3Img;
+        }
+
+        function appendData_s4(data) {
+            var s4Container = document.getElementById("section4_container_outter");
+            for (var i = 0; i < data.length; i++) {
+                var s4_box = "<span id='section4_container_inner'>";
+                if (i % 2 == 0) {
+                    // Align Left
+                    s4_box += "<div id='section4_img_box'>" +
+                        "<img src='" + data[i].image + "'></img>" + "</div>" +
+                        "<div id='section4_box'>" +
+                        "<div id='section4_title_left'>" + data[i].heading + "<br><br></div>" +
+                        "<div id='section4_text'>" + data[i].text + "</div>" +
+                        "</div></span>";
+                } else {
+                    // Align Right
+                    s4_box += "<div id='section4_box'>" +
+                        "<div id='section4_title_right'>" + data[i].heading + "<br><br></div>" +
+                        "<div id='section4_text'>" + data[i].text + "</div>" + "</div>" +
+                        "<div id='section4_img_box'>" +
+                        "<img src='" + data[i].image + "'></img>" + "</div></span>";
+                }
+                s4Container.innerHTML += s4_box;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

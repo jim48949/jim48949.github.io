@@ -1,0 +1,243 @@
+.notFound_img {
+    box-shadow: inset 0 0 0 100vw rgba(229, 127, 58, 0.5);
+    background: var(--image-url) center center;
+    background-size: cover;
+    width: 1900px;
+    height: 400px;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFound_text_container {
+    padding: 150px 400px 230px;
+}
+
+.notFound_text {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 590;
+    text-align: center;
+    line-height: 35px;
+}
+
+div.top_menu {
+    padding: 40px 250px 20px;
+    width: 1400px;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul.menu_bar {
+    width: 1000px;
+    height: 80px;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0 140px;
+}
+
+#menu_home {
+    display: table-cell;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 1px 2px #E57F3A;
+}
+
+#menu_home a {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+#menu_home a:hover {
+    color: #E57F3A;
+    text-shadow: 1px 1px white;
+}
+
+#menu_404 {
+    display: table-cell;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 1px 1px white;
+}
+
+#menu_404 a {
+    color: #E57F3A;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+#menu_404 a:hover {
+    color: white;
+    text-shadow: 1px 1px #E57F3A;
+}
+
+.header_bg {
+    width: 1900px;
+    height: 475px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 1px 1px white;
+    font-weight: 600;
+}
+
+.header_bg img {
+    width: 1900px;
+    height: 1300px;
+    margin: -700px 0 0 0;
+}
+
+.header_text {
+    position: absolute;
+    top: 215px;
+    left: 650px;
+    color: #E57F3A;
+}
+
+#section2_container {
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 150px 350px;
+    border-spacing: 30px;
+    width: 1000px;
+}
+
+#section2_box {
+    display: table-cell;
+    width: 300px;
+    height: 450px;
+    background-color: black;
+    padding: 20px 20px;
+    color: white;
+}
+
+#section2_box img {
+    width: 300px;
+    height: 180px;
+}
+
+#section2_title {
+    font-size: 22px;
+    padding: 15px 0 15px;
+}
+
+#section2_text {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#section3_container {
+    display: inline-block;
+    vertical-align: top;
+    width: 1400px;
+    padding: 150px 270px;
+    background-color: black;
+}
+
+#section3_box {
+    display: inline-block;
+    width: 600px;
+    height: 340px;
+    padding: 10px 10px;
+    color: white;
+}
+
+#section3_box img {
+    width: 550px;
+    height: 330px;
+}
+
+#section3_text {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#section4_container_outter {
+    padding: 170px 0;
+    width: 1400px;
+}
+
+#section4_container_inner {
+    display: inline-block;
+    border-spacing: 20px;
+    padding: 30px 250px 0;
+    width: 1400px;
+}
+
+#section4_box {
+    display: inline-block;
+    vertical-align: top;
+    width: 800px;
+    height: 340px;
+    padding: 10px 20px;
+    color: white;
+}
+
+#section4_img_box {
+    display: inline-block;
+    vertical-align: top;
+    width: 480px;
+    height: 340px;
+    padding: 10px 10px;
+}
+
+#section4_img_box img {
+    width: 480px;
+    height: 300px;
+}
+
+#section4_text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#section4_title_left {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 600;
+}
+
+#section4_title_right {
+    font-size: 30px;
+    text-align: right;
+    font-weight: 600;
+}
+
+#section5_container {
+    background-color: black;
+    height: 250px;
+    color: white;
+    padding: 40px 80px;
+}
+
+#section5_box {
+    display: table;
+    table-layout: fixed;
+    padding: 0 200px;
+    font-size: 18px;
+}
+
+#section5_box li {
+    display: table-cell;
+    width: 600px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+#section5_box li a {
+    text-decoration: none;
+    color: white;
+}
+
+#section5_box li a:hover {
+    text-decoration: underline;
+}
