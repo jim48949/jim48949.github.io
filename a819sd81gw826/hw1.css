@@ -38,7 +38,6 @@ ul.menu_bar {
     height: 80px;
     display: table;
     table-layout: fixed;
-    margin: 0;
     padding: 0 140px;
 }
 
@@ -105,7 +104,6 @@ ul.menu_bar {
 #section2_container {
     display: table;
     table-layout: fixed;
-    margin: 0;
     padding: 150px 350px;
     border-spacing: 30px;
     width: 1000px;
@@ -139,7 +137,7 @@ ul.menu_bar {
     display: inline-block;
     vertical-align: top;
     width: 1400px;
-    padding: 150px 270px;
+    padding: 150px 250px;
     background-color: black;
 }
 
@@ -224,6 +222,7 @@ ul.menu_bar {
     table-layout: fixed;
     padding: 0 200px;
     font-size: 18px;
+    width: 1400px;
 }
 
 #section5_box li {
