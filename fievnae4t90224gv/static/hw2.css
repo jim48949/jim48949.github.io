@@ -1,0 +1,40 @@
+h1{
+	text-align: center;
+}
+
+input[type=number]{
+	width: 250px;
+	height:35px;
+}
+
+input[type=submit]{
+	width: 140px;
+	height: 40px;
+	background-color: #2DA0E2;
+	color: white;
+	font-size: 24px;
+	font-weight: 580;
+}
+
+::placeholder{
+	font-size: 15px;
+	font-weight: 560;
+}
+
+.input_form{
+	text-align: center;
+}
+
+.column label{
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.asters{
+	color:red;
+}
+
+.result{
+    text-align: center;
+    font-size: 32px;
+}

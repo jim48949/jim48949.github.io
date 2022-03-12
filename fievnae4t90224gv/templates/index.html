@@ -1,0 +1,30 @@
+<html>
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hw2.css') }}" />
+        <title>Blood Pressure Predictor</title>
+    </head>
+    <body>
+		<h1>Blood Pressure Predictor</h1>
+		<h1>Fill out the form to get your Blood Pressure estimate!</h1>
+		<br>
+		<form method="POST" class='input_form'>
+			<div class='column'>
+				<label>Age</label><label class='asters'> * </label>
+				<input name="age" type="number" placeholder="Enter age in years" required oninvalid="this.setCustomValidity('Please enter a number')" onchange="this.setCustomValidity('')"></input>
+			</div>
+			<br>
+			<div class='column'>
+				<label>Weight</label><label class='asters'> * </label>
+				<input name="weight" type="number" placeholder="Enter weight in kg" required oninvalid="this.setCustomValidity('Please enter a number')" onchange="this.setCustomValidity('')"></input>
+			</div>
+			<br>
+			<div class='submit_button'>
+				<input type="submit" name="submit" value="Calculate"/>
+			</div>
+		</form>
+		<div class="result">
+			{{ result }}
+		</div>
+    </body>
+</html>
